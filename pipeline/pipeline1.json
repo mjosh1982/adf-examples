@@ -1,0 +1,75 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@variables('FileNames')",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Append variable1",
+							"type": "AppendVariable",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "CapitalizeFileName",
+								"value": {
+									"value": "@toUpper(item())",
+									"type": "Expression"
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "ForEach1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "FinalCapitalizeFileNames",
+					"value": {
+						"value": "@variables('CapitalizeFileName')",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"FileNames": {
+				"type": "Array",
+				"defaultValue": [
+					"a.csv",
+					"b.csv",
+					"c.csv"
+				]
+			},
+			"CapitalizeFileName": {
+				"type": "Array"
+			},
+			"FinalCapitalizeFileNames": {
+				"type": "Array"
+			}
+		},
+		"annotations": []
+	}
+}
