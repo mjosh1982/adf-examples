@@ -1,0 +1,15 @@
+{
+	"name": "manoj-1982-df",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "dd89d581-bf75-4c8a-935a-1628f552bd9a",
+		"tenantId": "edcb69da-563d-4aa0-a13e-94be9a1d722d"
+	}
+}
