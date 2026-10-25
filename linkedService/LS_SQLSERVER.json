@@ -5,13 +5,13 @@
 		"annotations": [],
 		"type": "SqlServer",
 		"typeProperties": {
-			"server": "sandbox-sql-server-1982.database.windows.net",
+			"server": "edurekasqlserver1982.database.windows.net",
 			"database": "userdb",
 			"encrypt": "mandatory",
 			"trustServerCertificate": false,
 			"authenticationType": "SQL",
 			"userName": "rootadmin",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEZDRkMzQkM5LTcwRkItNDlEMy04OUZBLUIxNjFEMkVGODk4Nl8zZjIwZTNmNS1lMWMzLTQ3Y2YtYTkzZC1kOTczZDEyOTk4YjgiDQp9"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDI4RkI1ODVFLUYwREMtNEIxNi04NjJELTU0RkY0MkEwOEFCNF9lYzYyNmQyZC0zOTRhLTRhNzYtYTk2Mi01MmFjNTE4MjI5ZmYiDQp9"
 		}
 	}
 }
