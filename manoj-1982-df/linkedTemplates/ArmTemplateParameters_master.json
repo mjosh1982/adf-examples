@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "manoj-1982-df"
+		},
+		"LS_SQLSERVER_password": {
+			"value": ""
+		},
+		"LS_edureka1982_accountKey": {
+			"value": ""
+		},
+		"LS_SQLSERVER_properties_typeProperties_server": {
+			"value": "edurekasqlserver1982.database.windows.net"
+		},
+		"LS_SQLSERVER_properties_typeProperties_database": {
+			"value": "userdb"
+		},
+		"LS_SQLSERVER_properties_typeProperties_userName": {
+			"value": "rootadmin"
+		},
+		"LS_edureka1982_properties_typeProperties_url": {
+			"value": "https://edurekasg1982.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
